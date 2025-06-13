@@ -39,30 +39,57 @@ const App = () => {
 
   
 
+  // return (
+  //   <div className="form-container">
+  //     <div className="form-card">
+  //       <h2 className="form-title">Ask a Question</h2>
+  //       <form onSubmit={handleSubmit} className="form">
+  //         <label htmlFor="question" className="form-label">Ask Your Question</label>
+  //         <input
+  //           id="question"
+  //           type="text"
+  //           value={ques}
+  //           onChange={(e) => setQues(e.target.value)}
+  //           placeholder="Type your question..."
+  //           className="form-input"
+  //         />
+  //         <button type="submit" className="form-button">Ask</button>
+  //       </form>
+  //       {answer && (
+  //         <div className="form-answer">
+  //           <article>{answer}</article>
+  //         </div>
+  //       )}
+  //     </div>
+  //   </div>
+  // );
+
+
   return (
-    <div className="form-container">
-      <div className="form-card">
-        <h2 className="form-title">Ask a Question</h2>
-        <form onSubmit={handleSubmit} className="form">
-          <label htmlFor="question" className="form-label">Ask Your Question</label>
-          <input
-            id="question"
-            type="text"
-            value={ques}
-            onChange={(e) => setQues(e.target.value)}
-            placeholder="Type your question..."
-            className="form-input"
-          />
-          <button type="submit" className="form-button">Ask</button>
-        </form>
-        {answer && (
-          <div className="form-answer">
-            <article>{answer}</article>
-          </div>
-        )}
-      </div>
+  <div className="form-container">
+    <div className="form-card">
+      <h2 className="form-title">Ask a Question</h2>
+      <form onSubmit={handleSubmit} className="form">
+        <label htmlFor="question" className="form-label">Ask Your Question</label>
+        <input
+          id="question"
+          type="text"
+          value={ques}
+          onChange={(e) => setQues(e.target.value)}
+          placeholder="Type your question..."
+          className="form-input"
+        />
+        <button type="submit" className="form-button">Ask</button>
+      </form>
+      {answer && (
+        <div className="form-answer">
+          <pre className="form-answer-text">{answer}</pre>
+        </div>
+      )}
     </div>
-  );
+  </div>
+);
+
 }
 
 

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        #include <iostream> #include <string> #include <algorithm> boolisPalindrome(std::string str) { std::string reversed_str = str; std::reverse(reversed_str.begin(), reversed_str.end()); return str == reversed_str; } int main() { std::string str; std::cout << "Enter a string: "; std::cin >> str; if (isPalindrome(str)) { std::cout << str << " is a palindrome." << std::endl; } else { std::cout << str << " is not a palindrome." << std::endl; } return 0; }
+    </pre>
+</body>
+</html>
